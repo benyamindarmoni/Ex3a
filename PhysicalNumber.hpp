@@ -39,8 +39,8 @@ namespace ariel
         PhysicalNumber& operator+();
         PhysicalNumber& operator++();
         PhysicalNumber& operator--();
-        std::ostream& operator<<(std::ostream& os, const PhysicalNumber& obj);
-        std::istream& operator>>(std::istream& is, PhysicalNumber& obj);
+        std::ostream& operator<<(std::ostream& os);
+        std::istream& operator>>(std::istream& is);
 
     };
 
