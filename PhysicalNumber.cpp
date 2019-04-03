@@ -28,10 +28,6 @@ int main()
 
 }
 
-ariel::PhysicalNumber::PhysicalNumber()
-{
-
-}
 
 ariel::PhysicalNumber::PhysicalNumber(int a, ariel::Unit)
 {
@@ -39,32 +35,32 @@ ariel::PhysicalNumber::PhysicalNumber(int a, ariel::Unit)
 
 }
 
-bool ariel::PhysicalNumber::operator==(const PhysicalNumber &lhs, const PhysicalNumber &rhs)
+bool ariel::PhysicalNumber::operator==(const PhysicalNumber &rhs)
 {
     return false;
 }
 
-bool ariel::PhysicalNumber::operator!=(const PhysicalNumber &lhs, const PhysicalNumber &rhs)
+bool ariel::PhysicalNumber::operator!=(const PhysicalNumber &rhs)
 {
     return false;
 }
 
-bool ariel::PhysicalNumber::operator<(const PhysicalNumber &lhs, const PhysicalNumber &rhs)
+bool ariel::PhysicalNumber::operator<(const PhysicalNumber &rhs)
 {
     return false;
 }
 
-bool ariel::PhysicalNumber::operator>(const PhysicalNumber &lhs, const PhysicalNumber &rhs)
+bool ariel::PhysicalNumber::operator>(const PhysicalNumber &rhs)
 {
     return false;
 }
 
-bool ariel::PhysicalNumber::operator<=(const PhysicalNumber &lhs, const PhysicalNumber &rhs)
+bool ariel::PhysicalNumber::operator<=(const PhysicalNumber &rhs)
 {
     return false;
 }
 
-bool ariel::PhysicalNumber::operator>=(const PhysicalNumber &lhs, const PhysicalNumber &rhs)
+bool ariel::PhysicalNumber::operator>=(const PhysicalNumber &rhs)
 {
     return false;
 }
