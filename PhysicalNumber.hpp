@@ -31,16 +31,16 @@ namespace ariel
         bool operator>(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
         bool operator<=(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
         bool operator>=(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
-        PhysicalNumber& operator+=(PhysicalNumber& rhs);
-        PhysicalNumber& operator-=(PhysicalNumber& rhs);
-        PhysicalNumber& operator+(PhysicalNumber lhs, const PhysicalNumber& rhs );
-        PhysicalNumber& operator-(PhysicalNumber lhs, const PhysicalNumber& rhs );
-        PhysicalNumber& operator-();
-        PhysicalNumber& operator+();
-        PhysicalNumber& operator++();
-        PhysicalNumber& operator--();
-        std::ostream& operator<<(std::ostream& os, const PhysicalNumber& obj);
-        std::istream& operator>>(std::istream& is, PhysicalNumber& obj);
+        inline PhysicalNumber& operator+=(PhysicalNumber& rhs);
+        inline PhysicalNumber& operator-=(PhysicalNumber& rhs);
+        inline PhysicalNumber& operator+(PhysicalNumber lhs, const PhysicalNumber& rhs );
+        inline PhysicalNumber& operator-(PhysicalNumber lhs, const PhysicalNumber& rhs );
+        inline PhysicalNumber& operator-();
+        inline PhysicalNumber& operator+();
+        inline PhysicalNumber& operator++();
+        inline PhysicalNumber& operator--();
+        inline std::ostream& operator<<(std::ostream& os, const PhysicalNumber& obj);
+        inline std::istream& operator>>(std::istream& is, PhysicalNumber& obj);
 
     };
 
