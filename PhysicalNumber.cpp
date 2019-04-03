@@ -14,9 +14,9 @@ using std::endl;
 using std::istringstream;
 using std::boolalpha;
 
-#include "PhysicalNumber.h"
+#include "PhysicalNumber.hpp"
 
-#include "Unit.h"
+#include "Unit.hpp"
 
 using ariel::PhysicalNumber;
 using ariel::Unit;
