@@ -28,9 +28,9 @@ namespace ariel
         bool operator==(const PhysicalNumber& rhs);
         bool operator!=(const PhysicalNumber& rhs);
         bool operator<(const PhysicalNumber& rhs);
-        bool operator>(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
-        bool operator<=(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
-        bool operator>=(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
+        bool operator>(const PhysicalNumber& rhs);
+        bool operator<=(const PhysicalNumber& rhs);
+        bool operator>=(const PhysicalNumber& rhs);
         inline PhysicalNumber& operator+=(PhysicalNumber& rhs);
         inline PhysicalNumber& operator-=(PhysicalNumber& rhs);
         inline PhysicalNumber& operator+(PhysicalNumber lhs, const PhysicalNumber& rhs );
