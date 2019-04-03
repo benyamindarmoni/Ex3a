@@ -8,20 +8,17 @@
 
 #include <stdexcept>
 
-
 using std::cout;
 using std::endl;
 using std::istringstream;
 using std::boolalpha;
 
-#include "PhysicalNumber.hpp"
+#include "PhysicalNumber.h"
 
-#include "Unit.hpp"
+#include "Unit.h"
 
 using ariel::PhysicalNumber;
 using ariel::Unit;
-
-
 
 int main()
 {
@@ -65,55 +62,57 @@ bool ariel::PhysicalNumber::operator>=(const PhysicalNumber &rhs)
     return false;
 }
 
-PhysicalNumber &ariel::PhysicalNumber::operator+=(PhysicalNumber &rhs)
+PhysicalNumber& ariel::PhysicalNumber::operator+=(PhysicalNumber &rhs)
 {
     return *this;
 }
 
-PhysicalNumber &ariel::PhysicalNumber::operator-=(PhysicalNumber &rhs)
+PhysicalNumber& ariel::PhysicalNumber::operator-=(PhysicalNumber &rhs)
 {
     return *this;
 }
 
-PhysicalNumber &ariel::PhysicalNumber::operator+(const PhysicalNumber &rhs)
+PhysicalNumber& ariel::PhysicalNumber::operator+(const PhysicalNumber &rhs)
 {
     return *this;
 }
 
-PhysicalNumber &ariel::PhysicalNumber::operator-(const PhysicalNumber &rhs)
+PhysicalNumber& ariel::PhysicalNumber::operator-(const PhysicalNumber &rhs)
 {
     return *this;
 }
 
-PhysicalNumber &ariel::PhysicalNumber::operator-()
+PhysicalNumber& ariel::PhysicalNumber::operator-()
 {
     return *this;
 }
 
-PhysicalNumber &ariel::PhysicalNumber::operator+()
+PhysicalNumber& ariel::PhysicalNumber::operator+()
 {
     return *this;
 }
 
-PhysicalNumber &ariel::PhysicalNumber::operator++()
+PhysicalNumber& ariel::PhysicalNumber::operator++()
 {
     return *this;
 }
 
-PhysicalNumber &ariel::PhysicalNumber::operator--()
+PhysicalNumber& ariel::PhysicalNumber::operator--()
 {
     return *this;
 }
 
-std::ostream &ariel::PhysicalNumber::operator<<(std::ostream &os)
+std::ostream& operator<<(std::ostream &os)
 {
     return os;
 }
 
-std::istream &ariel::PhysicalNumber::operator>>(std::istream &is)
+
+std::istream& operator>>(std::istream &is)
 {
     return is;
 }
+
 
 
 
