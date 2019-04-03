@@ -25,9 +25,9 @@ namespace ariel
     {
     public:
         PhysicalNumber(int a, ariel::Unit);
-        bool operator==(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
-        bool operator!=(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
-        bool operator<(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
+        bool operator==(const PhysicalNumber& rhs);
+        bool operator!=(const PhysicalNumber& rhs);
+        bool operator<(const PhysicalNumber& rhs);
         bool operator>(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
         bool operator<=(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
         bool operator>=(const PhysicalNumber& lhs, const PhysicalNumber& rhs);
