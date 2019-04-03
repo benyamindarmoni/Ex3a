@@ -75,12 +75,12 @@ PhysicalNumber &ariel::PhysicalNumber::operator-=(PhysicalNumber &rhs)
     return *this;
 }
 
-PhysicalNumber &ariel::PhysicalNumber::operator+(PhysicalNumber lhs, const PhysicalNumber &rhs)
+PhysicalNumber &ariel::PhysicalNumber::operator+(const PhysicalNumber &rhs)
 {
     return *this;
 }
 
-PhysicalNumber &ariel::PhysicalNumber::operator-(PhysicalNumber lhs, const PhysicalNumber &rhs)
+PhysicalNumber &ariel::PhysicalNumber::operator-(const PhysicalNumber &rhs)
 {
     return *this;
 }
@@ -105,12 +105,12 @@ PhysicalNumber &ariel::PhysicalNumber::operator--()
     return *this;
 }
 
-std::ostream &ariel::PhysicalNumber::operator<<(std::ostream &os, const PhysicalNumber &obj)
+std::ostream &ariel::PhysicalNumber::operator<<(std::ostream &os)
 {
     return os;
 }
 
-std::istream &ariel::PhysicalNumber::operator>>(std::istream &is, PhysicalNumber &obj)
+std::istream &ariel::PhysicalNumber::operator>>(std::istream &is)
 {
     return is;
 }
