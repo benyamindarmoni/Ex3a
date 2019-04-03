@@ -29,7 +29,7 @@ int main()
 }
 
 
-ariel::PhysicalNumber::PhysicalNumber(int a, ariel::Unit)
+ariel::PhysicalNumber::PhysicalNumber(int num, ariel::Unit)
 {
 
 
