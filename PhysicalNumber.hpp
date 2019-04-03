@@ -24,7 +24,7 @@ namespace ariel
     class PhysicalNumber
     {
     public:
-        PhysicalNumber(int a, ariel::Unit);
+        PhysicalNumber(int a=1, ariel::Unit=0);
         bool operator==(const PhysicalNumber& rhs);
         bool operator!=(const PhysicalNumber& rhs);
         bool operator<(const PhysicalNumber& rhs);
