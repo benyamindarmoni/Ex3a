@@ -102,14 +102,27 @@ PhysicalNumber& ariel::PhysicalNumber::operator--()
     return *this;
 }
 
-std::ostream &ariel::PhysicalNumber::operator<<(std::ostream &os)
+//std::ostream &ariel::PhysicalNumber::operator<<(std::ostream &os)
+//{
+  //  return os;
+//}
+
+//std::istream &ariel::PhysicalNumber::operator>>(std::istream &is)
+//{
+  //  return is;
+//}
+
+
+istream& ariel::operator>>(istream &in, ariel::PhysicalNumber &a) 
 {
-    return os;
+    return in;
 }
 
-std::istream &ariel::PhysicalNumber::operator>>(std::istream &is)
+
+
+ostream& ariel::operator<<(ostream &out,const ariel::PhysicalNumber &a) 
 {
-    return is;
+    return out;
 }
 
 
