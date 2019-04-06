@@ -1,19 +1,6 @@
 #include <iostream>
 #include "PhysicalNumber.h"
 using namespace std;
-int main()
-
-{
-
-
-
-}
-
-
-
-
-
-
 
 bool ariel::PhysicalNumber::operator==(const PhysicalNumber &rhs)
 
