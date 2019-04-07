@@ -64,7 +64,7 @@ PhysicalNumber& PhysicalNumber::operator--()
 
 istream& ariel::operator>>(istream& in, ariel::PhysicalNumber& a)
 {
-    in>>a.value>>a.unit;
+   
     return in;
 }
  ostream& ariel::operator<<(ostream& out, const ariel::PhysicalNumber& a)
