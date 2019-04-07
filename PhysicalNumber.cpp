@@ -64,8 +64,24 @@ PhysicalNumber& PhysicalNumber::operator--()
 
 istream& ariel::operator>>(istream& in, ariel::PhysicalNumber& a)
 {
-   
-    return in;
+      int b=(int)a.unit;
+    string unitName="";
+    switch (b)
+      { 
+         case 0: unitName="m"; break;
+         case 1: unitName="km";break;
+         case 2: unitName="cm";break;
+         case 3: unitName="sec";break;
+         case 4: unitName="min";break;
+         case 5: unitName="hour";break;
+         case 6: unitName="g";break;
+         case 7: unitName="kg";break;
+         case 8: unitName="ton";break;
+       }
+
+        
+            in>>a.value>>"[">>unitName>>"]";
+            return in;
 }
  ostream& ariel::operator<<(ostream& out, const ariel::PhysicalNumber& a)
 {
