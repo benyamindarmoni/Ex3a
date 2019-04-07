@@ -89,34 +89,9 @@ istream& ariel::operator>>(istream &in, PhysicalNumber& a)
     }
 
 
-string PhysicalNumber::getType()
-{
-    int tempUnit=(int)this->unit;
 
-    switch (tempUnit)
-    {
-        case 0: return "M";
-        case 1: return "KM";
-        case 2: return "CM";
-        case 3: return "SEC";
-        case 4: return "MIN";
-        case 5: return "HOUR";
-        case 6: return "G";
-        case 7: return "KG";
-        case 8: return "TON";
-    }
-    return "NULL";
-}
 
-double PhysicalNumber::getData()
-{
-    return (int)this->value;
-}
 
-void PhysicalNumber::SetUnit(Unit un)
-{
-
-}
 
 
 
