@@ -22,7 +22,7 @@ using std::cout, std::endl, std::boolalpha;
 
 #include "PhysicalNumber.h"
 
-using ariel::PhysicalNumber;
+using ariel::PhysicalNumber, ariel::Unit;
 
 
 
@@ -54,9 +54,9 @@ int main() {
 
 
 
-    istringstream input("700[kg]");
+   // istringstream input("700[kg]");
 
-    input >> a;
+    //input >> a;
 
     cout << a << endl;   // Prints "700[kg]"
 
