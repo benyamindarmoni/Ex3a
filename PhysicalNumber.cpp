@@ -1,77 +1,74 @@
 #include <iostream>
 
 #include "PhysicalNumber.h"
-
+using namespace ariel;
 using namespace std;
 
-bool ariel::PhysicalNumber::operator==(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator==(const PhysicalNumber &rhs)
 {
     return false;
 }
-bool ariel::PhysicalNumber::operator!=(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator!=(const PhysicalNumber &rhs)
 {
     return false;
 }
-bool ariel::PhysicalNumber::operator<(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator<(const PhysicalNumber &rhs)
 {
     return false;
 }
-bool ariel::PhysicalNumber::operator>(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator>(const PhysicalNumber &rhs)
 {
     return false;
 }
-bool ariel::PhysicalNumber::operator<=(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator<=(const PhysicalNumber &rhs)
 {
     return false;
 }
-bool ariel::PhysicalNumber::operator>=(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator>=(const PhysicalNumber &rhs)
 {
     return false;
 }
-ariel::PhysicalNumber& ariel::PhysicalNumber::operator+=(const PhysicalNumber &rhs)
+PhysicalNumber& PhysicalNumber::operator+=(const PhysicalNumber &rhs)
 {
     return *this;
 }
-ariel::PhysicalNumber& ariel::PhysicalNumber::operator-=(PhysicalNumber &rhs)
+PhysicalNumber& PhysicalNumber::operator-=(PhysicalNumber &rhs)
 {
     return *this;
 }
 
-ariel::PhysicalNumber& ariel::PhysicalNumber::operator+(const PhysicalNumber &rhs)
+PhysicalNumber& PhysicalNumber::operator+(const PhysicalNumber &rhs)
 {
     return *this;
 }
-ariel::PhysicalNumber& ariel::PhysicalNumber::operator-(const PhysicalNumber &rhs)
+PhysicalNumber& PhysicalNumber::operator-(const PhysicalNumber &rhs)
 {
     return *this;
 }
-ariel::PhysicalNumber& ariel::PhysicalNumber::operator-()
+PhysicalNumber& PhysicalNumber::operator-()
 {
     return *this;
 }
-ariel::PhysicalNumber& ariel::PhysicalNumber::operator+()
+PhysicalNumber& PhysicalNumber::operator+()
 {
     return *this;
 }
-ariel::PhysicalNumber& ariel::PhysicalNumber::operator++()
+PhysicalNumber& PhysicalNumber::operator++()
 {
     return *this;
 }
-ariel::PhysicalNumber& ariel::PhysicalNumber::operator--()
+PhysicalNumber& PhysicalNumber::operator--()
 {
     return *this;
 }
 
-istream &ariel::operator>>(istream &in, ariel::PhysicalNumber a)
+istream& ariel::operator>>(istream &in, PhysicalNumber& a)
 {
     return in;
 }
 
 
-
-
-
-    ostream &ariel::operator<<(ostream &out, ariel::PhysicalNumber a)
+    ostream& ariel::operator<<(ostream &out, const PhysicalNumber& a)
     {
         int b=(int)a.unit;
         string unitName;
@@ -92,7 +89,7 @@ istream &ariel::operator>>(istream &in, ariel::PhysicalNumber a)
     }
 
 
-string ariel::PhysicalNumber::getType()
+string PhysicalNumber::getType()
 {
     int tempUnit=(int)this->unit;
 
@@ -111,12 +108,12 @@ string ariel::PhysicalNumber::getType()
     return "NULL";
 }
 
-double ariel::PhysicalNumber::getData()
+double PhysicalNumber::getData()
 {
     return (int)this->value;
 }
 
-void ariel::PhysicalNumber::SetUnit(ariel::Unit un)
+void PhysicalNumber::SetUnit(Unit un)
 {
 
 }
