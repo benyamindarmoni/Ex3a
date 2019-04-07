@@ -83,7 +83,9 @@ istream& ariel::operator>>(istream& in, ariel::PhysicalNumber& a)
          case 8: unitName="ton";break;
        }
 
-        return out<<a.value<<"["<<unitName<<"]";
+        
+            out<<a.value<<"["<<unitName<<"]";
+     return out;
    }
 
 
