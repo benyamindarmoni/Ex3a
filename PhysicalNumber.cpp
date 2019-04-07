@@ -62,7 +62,7 @@ PhysicalNumber& PhysicalNumber::operator--()
     return *this;
 }
 
-istream& ariel::operator>>(istream& in, ariel::PhysicalNumber& a)
+std::istream& ariel::operator>>(std::istream& in, const PhysicalNumber& a)
 {
        return in;
 }
