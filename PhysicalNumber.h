@@ -41,7 +41,7 @@ namespace ariel
         PhysicalNumber& operator++();
         PhysicalNumber& operator--();
         //stream
-        friend istream& operator>>(istream& in, PhysicalNumber& a);
+        friend istream& operator>>(istream& in, const PhysicalNumber& a);
         friend ostream& operator<<(ostream& out, const PhysicalNumber& a);
        
     };
