@@ -62,7 +62,7 @@ ariel::PhysicalNumber& ariel::PhysicalNumber::operator--()
     return *this;
 }
 
-istream &ariel::operator>>(istream &in, ariel::PhysicalNumber &a)
+istream &ariel::operator>>(istream &in, ariel::PhysicalNumber a)
 {
     return in;
 }
@@ -71,7 +71,7 @@ istream &ariel::operator>>(istream &in, ariel::PhysicalNumber &a)
 
 
 
-    ostream &ariel::operator<<(ostream &out, const ariel::PhysicalNumber &a)
+    ostream &ariel::operator<<(ostream &out, ariel::PhysicalNumber a)
     {
         int b=(int)a.unit;
         string unitName;
