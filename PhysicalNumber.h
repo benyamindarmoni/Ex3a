@@ -57,7 +57,7 @@ namespace ariel
 
 
 
-        PhysicalNumber &operator+=(PhysicalNumber &rhs);
+        friend ariel::PhysicalNumber& operator+=(PhysicalNumber& &rhs,const ariel::PhysicalNumber& b);
 
 
 
