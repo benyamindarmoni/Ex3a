@@ -69,7 +69,7 @@ istream& ariel::operator>>(istream& in, ariel::PhysicalNumber& a)
  ostream& ariel::operator<<(ostream& out, const ariel::PhysicalNumber& a)
 {
     int b=(int)a.unit;
-    string unitName;
+    string unitName="";
     switch (b)
       { 
          case 0: unitName="m"; break;
