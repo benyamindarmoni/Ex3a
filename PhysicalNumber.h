@@ -20,7 +20,8 @@ namespace ariel
         Unit unit;
         PhysicalNumber(double num, Unit type):value(num),unit(type)
         {
-
+           value=num;
+            unit=type;
         }
         //boolean
         bool operator==(const PhysicalNumber& rhs);
