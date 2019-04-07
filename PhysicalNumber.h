@@ -28,7 +28,7 @@ namespace ariel
         bool operator>(const PhysicalNumber &rhs);
         bool operator<=(const PhysicalNumber &rhs);
         bool operator>=(const PhysicalNumber &rhs);
-        PhysicalNumber& operator+=(const PhysicalNumber& rhs);
+        PhysicalNumber &operator+=(const PhysicalNumber& rhs);
         PhysicalNumber &operator-=(PhysicalNumber &rhs);
         PhysicalNumber &operator+(const PhysicalNumber &rhs);
         PhysicalNumber &operator-(const PhysicalNumber &rhs);
@@ -36,8 +36,8 @@ namespace ariel
         PhysicalNumber &operator+();
         PhysicalNumber &operator++();
         PhysicalNumber &operator--();
-        friend istream& operator>>(istream& in, ariel::PhysicalNumber &a);
-        friend ostream& operator<<(ostream& out, ariel::PhysicalNumber const&a);
+        friend istream& operator>>(istream& in, PhysicalNumber a);
+        friend ostream& operator<<(ostream& out, PhysicalNumber  a);
         string getType();
         double getData();
     };
