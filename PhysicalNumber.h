@@ -23,26 +23,26 @@ namespace ariel
 
         }
         //boolean
-        bool operator==(const PhysicalNumber &rhs);
-        bool operator!=(const PhysicalNumber &rhs);
-        bool operator<(const PhysicalNumber &rhs);
-        bool operator>(const PhysicalNumber &rhs);
-        bool operator<=(const PhysicalNumber &rhs);
-        bool operator>=(const PhysicalNumber &rhs);
+        bool operator==(const PhysicalNumber& rhs);
+        bool operator!=(const PhysicalNumber& rhs);
+        bool operator<(const PhysicalNumber& rhs);
+        bool operator>(const PhysicalNumber& rhs);
+        bool operator<=(const PhysicalNumber& rhs);
+        bool operator>=(const PhysicalNumber& rhs);
         //+=,-=,+,-
         PhysicalNumber &operator+=(const PhysicalNumber& rhs);
-        PhysicalNumber &operator-=(PhysicalNumber &rhs);
-        PhysicalNumber &operator+(const PhysicalNumber &rhs);
-        PhysicalNumber &operator-(const PhysicalNumber &rhs);
+        PhysicalNumber &operator-=(PhysicalNumber& rhs);
+        PhysicalNumber &operator+(const PhysicalNumber& rhs);
+        PhysicalNumber &operator-(const PhysicalNumber& rhs);
         //onary 
-        PhysicalNumber &operator-();
-        PhysicalNumber &operator+();
+        PhysicalNumber& operator-();
+        PhysicalNumber& operator+();
         //++,--
-        PhysicalNumber &operator++();
-        PhysicalNumber &operator--();
+        PhysicalNumber& operator++();
+        PhysicalNumber& operator--();
         //stream
         friend istream& operator>>(istream& in, PhysicalNumber& a);
-        friend ostream& operator<<(ostream& out, const PhysicalNumber&  a);
+        friend ostream& operator<<(ostream& out, const PhysicalNumber& a);
        
     };
 }
