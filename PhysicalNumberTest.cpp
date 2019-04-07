@@ -17,7 +17,10 @@ int main() {
     PhysicalNumber b(300, Unit::M);
     PhysicalNumber c(2, Unit::HOUR);
     PhysicalNumber d(30, Unit::MIN);
-
+   //my factors
+   PhysicalNumber x(20, Unit::TON);
+      PhysicalNumber y(45, Unit::KG);
+      PhysicalNumber z(22, Unit::G);
     testcase
     .setname("Basic output")
     .CHECK_OUTPUT(a, "2[km]")
