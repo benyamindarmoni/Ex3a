@@ -116,10 +116,10 @@ double ariel::PhysicalNumber::getData()
     return (int)this->value;
 }
 
-  void SetUnit(Unit un)
-  {
-      this->unit = un;
-   }
+void ariel::PhysicalNumber::SetUnit(ariel::Unit un)
+{
+
+}
 
 
 
