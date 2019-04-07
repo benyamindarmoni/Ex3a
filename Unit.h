@@ -12,7 +12,7 @@ namespace ariel
 
 {
 
-    enum class Unit
+    enum Unit
 
     {
 
