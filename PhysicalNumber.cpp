@@ -4,44 +4,44 @@
 using namespace ariel;
 using namespace std;
 
-bool PhysicalNumber::operator==(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator==(const PhysicalNumber& rhs)
 {
     return false;
 }
-bool PhysicalNumber::operator!=(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator!=(const PhysicalNumber& rhs)
 {
     return false;
 }
-bool PhysicalNumber::operator<(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator<(const PhysicalNumber& rhs)
 {
     return false;
 }
-bool PhysicalNumber::operator>(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator>(const PhysicalNumber& rhs)
 {
     return false;
 }
-bool PhysicalNumber::operator<=(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator<=(const PhysicalNumber& rhs)
 {
     return false;
 }
-bool PhysicalNumber::operator>=(const PhysicalNumber &rhs)
+bool PhysicalNumber::operator>=(const PhysicalNumber& rhs)
 {
     return false;
 }
-PhysicalNumber& PhysicalNumber::operator+=(const PhysicalNumber &rhs)
+PhysicalNumber& PhysicalNumber::operator+=(const PhysicalNumber& rhs)
 {
     return *this;
 }
-PhysicalNumber& PhysicalNumber::operator-=(PhysicalNumber &rhs)
+PhysicalNumber& PhysicalNumber::operator-=(PhysicalNumber& rhs)
 {
     return *this;
 }
 
-PhysicalNumber& PhysicalNumber::operator+(const PhysicalNumber &rhs)
+PhysicalNumber& PhysicalNumber::operator+(const PhysicalNumber& rhs)
 {
     return *this;
 }
-PhysicalNumber& PhysicalNumber::operator-(const PhysicalNumber &rhs)
+PhysicalNumber& PhysicalNumber::operator-(const PhysicalNumber& rhs)
 {
     return *this;
 }
@@ -62,16 +62,16 @@ PhysicalNumber& PhysicalNumber::operator--()
     return *this;
 }
 
-istream& ariel::operator>>(istream &in, ariel::PhysicalNumber& a)
+istream& ariel::operator>>(istream& in, ariel::PhysicalNumber& a)
 {
     return in;
 }
- ostream& ariel::operator<<(ostream &out, const ariel::PhysicalNumber& a)
+ ostream& ariel::operator<<(ostream& out, const ariel::PhysicalNumber& a)
 {
     int b=(int)a.unit;
     string unitName;
     switch (b)
-      {
+      { 
          case 0: unitName="m"; break;
          case 1: unitName="km";break;
          case 2: unitName="cm";break;
