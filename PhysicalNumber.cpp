@@ -28,9 +28,9 @@ bool ariel::PhysicalNumber::operator>=(const PhysicalNumber &rhs)
 {
     return false;
 }
-ariel::PhysicalNumber &ariel::operator+=(ariel::PhysicalNumber &rhs,const ariel::PhysicalNumber &lhs)
+ariel::PhysicalNumber& ariel::PhysicalNumber::operator+=(const PhysicalNumber &rhs)
 {
-    return rhs;
+    return *this;
 }
 ariel::PhysicalNumber& ariel::PhysicalNumber::operator-=(PhysicalNumber &rhs)
 {
@@ -61,18 +61,25 @@ ariel::PhysicalNumber& ariel::PhysicalNumber::operator--()
 {
     return *this;
 }
-istream& ariel::operator>>(istream &in, ariel::PhysicalNumber &a)
+
+istream &ariel::operator>>(istream &in, ariel::PhysicalNumber &a)
 {
     return in;
 }
-ostream& ariel::operator<<(ostream &out,const ariel::PhysicalNumber &a)
+
+
+
+
+ostream &ariel::operator<<(ostream &out, const ariel::PhysicalNumber &a)
 {
-    return out<<a.value<<"["<<"]"<<endl;
+    int b=(int)a.unit;
+    return out<<a.value<<"["<<b<<"]"<<endl;
 }
 
 string ariel::PhysicalNumber::getType()
 {
-    int tempUnit=(int)(this->unit);
+    int tempUnit=(int)this->unit;
+
     switch (tempUnit)
     {
         case 0: return "M";
@@ -90,8 +97,10 @@ string ariel::PhysicalNumber::getType()
 
 double ariel::PhysicalNumber::getData()
 {
-    return this->value;
+    return (int)this->value;
 }
+
+
 
 
 
