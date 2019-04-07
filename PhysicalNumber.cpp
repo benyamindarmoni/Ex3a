@@ -1,6 +1,13 @@
 #include <iostream>
 #include "PhysicalNumber.h"
 using namespace std;
+int main()
+
+{
+
+
+
+}
 
 bool ariel::PhysicalNumber::operator==(const PhysicalNumber &rhs)
 
@@ -62,11 +69,11 @@ bool ariel::PhysicalNumber::operator>=(const PhysicalNumber &rhs)
 
 
 
-ariel::PhysicalNumber& ariel::PhysicalNumber::operator+=(PhysicalNumber &rhs)
+ariel::PhysicalNumber &ariel::operator+=(ariel::PhysicalNumber &rhs,const ariel::PhysicalNumber &lhs)
 
 {
 
-    return *this;
+    return rhs;
 
 }
 
@@ -155,3 +162,8 @@ ostream& ariel::operator<<(ostream &out,const ariel::PhysicalNumber &a)
     return out;
 
 }
+
+
+
+
+
