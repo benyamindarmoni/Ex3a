@@ -40,5 +40,6 @@ namespace ariel
         friend ostream& operator<<(ostream& out, PhysicalNumber  a);
         string getType();
         double getData();
+        void SetUnit(Unit unit);
     };
 }
