@@ -67,8 +67,8 @@ int main() {
       
       .CHECK_EQUAL(y>=y,true)   
      
-     /*.CHECK_EQUAL(x==2, false)
-      .CHECK_EQUAL(z==y, false)
+     .CHECK_EQUAL(x==2, false)
+      /*.CHECK_EQUAL(z==y, false)
       .CHECK_EQUAL(y==10, false)
       .CHECK_EQUAL(y>x, false)
               .CHECK_EQUAL(x>=y, true)
