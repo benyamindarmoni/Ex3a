@@ -47,10 +47,10 @@ int main() {
     .CHECK_OUTPUT((a += PhysicalNumber(1, Unit::TON)), "1700[kg]")
 
     // YOUR TESTS - INSERT AS MANY AS YOU WANT
-// .setname("myTest")
-   //  .CHECK_OUTPUT(x, "20[TON]")
-  //    .CHECK_OUTPUT(y, "45[KG]")
-   //    .CHECK_OUTPUT(z, "22[G]")
+ .setname("myTest")
+     .CHECK_OUTPUT(x, "20[TON]")
+      .CHECK_OUTPUT(y, "45[KG]")
+       .CHECK_OUTPUT(z, "22[G]")
     //    .CHECK_THROWS(x+b)
      //   .CHECK_THROWS(y+d)
      ////   .CHECK_THROWS(z+d)
