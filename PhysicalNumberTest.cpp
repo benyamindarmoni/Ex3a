@@ -61,13 +61,15 @@ int main() {
         .CHECK_OUTPUT(z++, "23[G]")
         .CHECK_OUTPUT(x+y, "21046[TON]")
        .CHECK_OUTPUT(z+y, "46023[G]")
+       .CHECK_OUTPUT(y--, "45[KG]")
+      
           //.CHECK_OUTPUT(x+=2, "23[TON]")
         //   .CHECK_OUTPUT(z+=5, "28[G]")
           //   .CHECK_OUTPUT(y+=10, "56[KG]")
          //     .CHECK_OUTPUT(x-=10, "13[TON]")
          //  .CHECK_OUTPUT(z-=8, "20[G]")
          //    .CHECK_OUTPUT(y-=20, "36[KG]")
-       .CHECK_OUTPUT(x==2, "0")
+       .CHECK_OUTPUT(x==2, "Flase")
          //  .CHECK_OUTPUT(z==y, "false")
             // .CHECK_OUTPUT(y==10, "false")
          //     .CHECK_OUTPUT(x-=23, "0[TON]")
@@ -75,8 +77,8 @@ int main() {
           //   .CHECK_OUTPUT(y-=56, "0[KG]")
            //  .CHECK_OUTPUT(y==x, "true")
            //  .CHECK_OUTPUT(y==z, "true")
-             //   .CHECK_OUTPUT(y++, "1[KG]")
-             //    .CHECK_OUTPUT(y--, "0[KG]")
+           
+                
           //  .CHECK_OUTPUT(x+=100, "100[TON]")
               //     .CHECK_OUTPUT(y>x, "false")
                     // .CHECK_OUTPUT(x>=y, "true")
