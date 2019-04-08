@@ -77,28 +77,18 @@ int main() {
        .CHECK_EQUAL(z==y, false)
      
     
-         /*
-          .CHECK_OUTPUT(x+=y, "21.046[TON]")
-         .CHECK_OUTPUT(z+=y, "46023[G]")
-             .CHECK_OUTPUT(y+=x, "21092[KG]")
-              .CHECK_OUTPUT(x-=z, "20.999977[TON]")
-           .CHECK_OUTPUT(y-=z, "21045.977[KG]")
-            
-      
-     
-            
+         
+          .CHECK_OUTPUT((x+=y), "21.046[TON]")
+         .CHECK_OUTPUT((z+=y), "46023[G]")
+             .CHECK_OUTPUT((y+=x), "21092[KG]")
+              .CHECK_OUTPUT((x-=z), "20.999977[TON]")
+           .CHECK_OUTPUT((y-=z), "21045.977[KG]")
             
              .CHECK_OUTPUT(y==x, "true")
             .CHECK_OUTPUT(y==z, "true")
-           
             
-            
-         */ 
+         
         
-
-        
-       
-      
       .print(cout, /*show_grade=*/false);
       grade = testcase.grade();
     } else {
