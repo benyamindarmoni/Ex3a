@@ -64,17 +64,17 @@ int main() {
         .CHECK_OUTPUT(x+y, "21046[TON]")
        .CHECK_OUTPUT(z+y, "46023[G]")
        .CHECK_OUTPUT(y--, "45[KG]")
-      
       .CHECK_EQUAL(y>=y,true)   
-     
-    /* .CHECK_EQUAL(x==2, false)
-      .CHECK_EQUAL(z==y, false)
-     .CHECK_EQUAL(y==10, false) */ 
       .CHECK_EQUAL(y>x, false)
-              .CHECK_EQUAL(x>=y, true)
+       .CHECK_EQUAL(x>=y, true)
        .CHECK_EQUAL(z>=y, false)
        .CHECK_EQUAL(x>=z, true)
       
+      
+         .CHECK_EQUAL(x==x,true)        
+       /* .CHECK_EQUAL(x==2, false)
+      .CHECK_EQUAL(z==y, false)
+     .CHECK_EQUAL(y==10, false) */ 
       
           //.CHECK_OUTPUT(x+=2, "23[TON]")
         //   .CHECK_OUTPUT(z+=5, "28[G]")
