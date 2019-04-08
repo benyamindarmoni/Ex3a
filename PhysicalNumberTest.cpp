@@ -61,7 +61,7 @@ int main() {
         .CHECK_OUTPUT(z++, "23[G]")
         .CHECK_OUTPUT(x+y, "21046[TON]")
        .CHECK_OUTPUT(z+y, "46023[G]")
-        //  .CHECK_OUTPUT(x+=2, "23[TON]")
+          .CHECK_OUTPUT(x+=2, "23[TON]")
         //   .CHECK_OUTPUT(z+=5, "28[G]")
           //   .CHECK_OUTPUT(y+=10, "56[KG]")
          //     .CHECK_OUTPUT(x-=10, "13[TON]")
