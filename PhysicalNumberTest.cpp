@@ -57,6 +57,8 @@ int main() {
         .CHECK_THROWS(z+d)
          .CHECK_THROWS(y+c)
        .CHECK_THROWS(z+b)
+       .CHECK_THROWS(z>b) .CHECK_THROWS(z<b) .CHECK_THROWS(z==b) .CHECK_THROWS(z+=b)
+      
       
         .CHECK_OUTPUT(x++, "21[TON]")
         .CHECK_OUTPUT(y++, "46[KG]")
@@ -64,35 +66,32 @@ int main() {
         .CHECK_OUTPUT(x+y, "21046[TON]")
        .CHECK_OUTPUT(z+y, "46023[G]")
        .CHECK_OUTPUT(y--, "45[KG]")
+      
       .CHECK_EQUAL(y>=y,true)   
       .CHECK_EQUAL(y>x, false)
        .CHECK_EQUAL(x>=y, true)
        .CHECK_EQUAL(z>=y, false)
        .CHECK_EQUAL(x>=z, true)
-      
-    
+       .CHECK_EQUAL(z<y, true)
          .CHECK_EQUAL(x==x,true) 
        .CHECK_EQUAL(z==y, false)
      
     
-      /* 
-          .CHECK_OUTPUT(x+=2, "23[TON]")
-         .CHECK_OUTPUT(z+=5, "28[G]")
-             .CHECK_OUTPUT(y+=10, "56[KG]")
-              .CHECK_OUTPUT(x-=10, "13[TON]")
-           .CHECK_OUTPUT(z-=8, "20[G]")
-             .CHECK_OUTPUT(y-=20, "36[KG]")
-      
        
+          .CHECK_OUTPUT(x+=y, "21.046[TON]")
+         .CHECK_OUTPUT(z+=y, "46023[G]")
+             .CHECK_OUTPUT(y+=x, "21092[KG]")
+              .CHECK_OUTPUT(x-=z, "20.999977[TON]")
+           .CHECK_OUTPUT(y-=z, "21045.977[KG]")
             
-              .CHECK_OUTPUT(x-=23, "0[TON]")
-          .CHECK_OUTPUT(z-=28, "0[G]")
-             .CHECK_OUTPUT(y-=56, "0[KG]")
+      
+       /*
+            
+            
              .CHECK_OUTPUT(y==x, "true")
             .CHECK_OUTPUT(y==z, "true")
            
-                
-            .CHECK_OUTPUT(x+=100, "100[TON]")
+            
             
          */ 
         
