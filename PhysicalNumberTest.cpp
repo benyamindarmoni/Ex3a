@@ -69,7 +69,7 @@ int main() {
          //     .CHECK_OUTPUT(x-=10, "13[TON]")
          //  .CHECK_OUTPUT(z-=8, "20[G]")
          //    .CHECK_OUTPUT(y-=20, "36[KG]")
-       .CHECK_OUTPUT(x==2, "Flase")
+      // .CHECK_OUTPUT(x==2, "Flase")
          //  .CHECK_OUTPUT(z==y, "false")
             // .CHECK_OUTPUT(y==10, "false")
          //     .CHECK_OUTPUT(x-=23, "0[TON]")
