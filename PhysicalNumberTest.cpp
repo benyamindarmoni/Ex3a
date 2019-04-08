@@ -70,31 +70,31 @@ int main() {
        .CHECK_EQUAL(z>=y, false)
        .CHECK_EQUAL(x>=z, true)
       
-      
-         .CHECK_EQUAL(x==x,true)        
-       /* .CHECK_EQUAL(x==2, false)
-      .CHECK_EQUAL(z==y, false)
-     .CHECK_EQUAL(y==10, false) */ 
-      
-          //.CHECK_OUTPUT(x+=2, "23[TON]")
-        //   .CHECK_OUTPUT(z+=5, "28[G]")
-          //   .CHECK_OUTPUT(y+=10, "56[KG]")
-         //     .CHECK_OUTPUT(x-=10, "13[TON]")
-         //  .CHECK_OUTPUT(z-=8, "20[G]")
-         //    .CHECK_OUTPUT(y-=20, "36[KG]")
+    
+         .CHECK_EQUAL(x==x,true) 
+       .CHECK_EQUAL(z==y, false)
+     
+    
+      /* 
+          .CHECK_OUTPUT(x+=2, "23[TON]")
+         .CHECK_OUTPUT(z+=5, "28[G]")
+             .CHECK_OUTPUT(y+=10, "56[KG]")
+              .CHECK_OUTPUT(x-=10, "13[TON]")
+           .CHECK_OUTPUT(z-=8, "20[G]")
+             .CHECK_OUTPUT(y-=20, "36[KG]")
       
        
             
-         //     .CHECK_OUTPUT(x-=23, "0[TON]")
-         //  .CHECK_OUTPUT(z-=28, "0[G]")
-          //   .CHECK_OUTPUT(y-=56, "0[KG]")
-           //  .CHECK_OUTPUT(y==x, "true")
-           //  .CHECK_OUTPUT(y==z, "true")
+              .CHECK_OUTPUT(x-=23, "0[TON]")
+          .CHECK_OUTPUT(z-=28, "0[G]")
+             .CHECK_OUTPUT(y-=56, "0[KG]")
+             .CHECK_OUTPUT(y==x, "true")
+            .CHECK_OUTPUT(y==z, "true")
            
                 
-          //  .CHECK_OUTPUT(x+=100, "100[TON]")
+            .CHECK_OUTPUT(x+=100, "100[TON]")
             
-        
+         */ 
         
 
         
