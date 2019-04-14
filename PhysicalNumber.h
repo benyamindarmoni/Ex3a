@@ -80,7 +80,7 @@ namespace ariel
         void convert(double& ,double& ,int ,const PhysicalNumber& );
     PhysicalNumber& help(double ,int);
         //stream
-    PhysicalNumber& help(double ,int);
+  
         friend istream& operator>>(istream& in,  PhysicalNumber& a);
 
         friend ostream& operator<<(ostream& out, const PhysicalNumber& a);
