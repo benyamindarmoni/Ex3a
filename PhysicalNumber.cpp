@@ -207,6 +207,7 @@ PhysicalNumber& PhysicalNumber::operator+=(const PhysicalNumber& rhs)
     double b=rhs.value;
     convert(a,b,family,rhs);
     a+=b;
+      value=a;
   return  help(a,family);
 }
 
@@ -220,6 +221,7 @@ PhysicalNumber& PhysicalNumber::operator-=(const PhysicalNumber& rhs)
     double b=rhs.value;
     convert(a,b,family,rhs);
     a-=b;
+    value=a;
   return  help(a,family);
 }
 PhysicalNumber& PhysicalNumber::help(double a,int family)
