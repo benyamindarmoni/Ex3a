@@ -135,6 +135,7 @@ PhysicalNumber& PhysicalNumber::operator+=(const PhysicalNumber& rhs)
     if(family==0) throw std::invalid_argument( "not the same dimention!" );
        convert(a,b,family,rhs);
             a=a+b;
+          value=a;
       return  help(a,family);
    
 }
@@ -147,6 +148,7 @@ PhysicalNumber& PhysicalNumber::operator-=(const PhysicalNumber& rhs)
     if(family==0) throw std::invalid_argument( "not the same dimention!" );
        convert(a,b,family,rhs);
             a=a-b;
+          value=a;
       return  help(a,family);
 }
 PhysicalNumber& PhysicalNumber::help(double a,int family)
@@ -156,24 +158,21 @@ PhysicalNumber& PhysicalNumber::help(double a,int family)
             value=a*100000;
         else if((int)unit==1)
               value=a*1000;
-         else
-             value=a;
+        
          }
          else if(family==2){
           if((int)unit==3)
              value=a*3600;
          else if((int)unit==4)
              value=a*60;
-          else
-          value=a;
+         
          }
           else {
              if((int)unit==6)
              value=a*1000000;
          else if((int)unit==7)
              value=a*1000;
-          else
-          value=a;
+         
 }
      return *this;
 }
