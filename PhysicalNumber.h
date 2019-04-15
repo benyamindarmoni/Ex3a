@@ -65,7 +65,7 @@ namespace ariel
 
         PhysicalNumber operator-();
 
-        PhysicalNumber& operator+();
+        PhysicalNumber operator+();
 
         //++,--
 
@@ -78,9 +78,10 @@ namespace ariel
         PhysicalNumber& operator--();
 
         void convert(double& ,double& ,int ,const PhysicalNumber& );
-    PhysicalNumber& help(double ,int);
+       PhysicalNumber& help(double a,int family);
+
         //stream
-  
+
         friend istream& operator>>(istream& in,  PhysicalNumber& a);
 
         friend ostream& operator<<(ostream& out, const PhysicalNumber& a);
