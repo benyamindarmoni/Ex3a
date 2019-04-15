@@ -132,190 +132,52 @@ PhysicalNumber& PhysicalNumber::operator+=(const PhysicalNumber& rhs)
     int family=samefamily(rhs);
     double a=value;
     double b=rhs.value;
-    if(family!=0){
-        if(family==1){
-            if((int)unit==0)a=a/100000;
-            if((int)unit==1)a=a/1000;
-            if((int)rhs.unit==0)b=b/100000;
-            if((int)rhs.unit==1)b=b/1000;
-            a+=b;
-            value=a;
-            if((int)unit==0)
-            {
-                value=a*100000;
-            }
-            if((int)unit==1)
-            {
-                value=a*1000;
-            }
-            return *this;
-        }
-        else if(family==2){
-            if((int)unit==3)
-                a=a/3600;
-            if((int)unit==4)
-                a=a/60;
-            if((int)rhs.unit==3)
-                b=b/3600;
-            if((int)rhs.unit==4)
-                b=b/60;
-            a+=b;
-            value=a;
-            if((int)unit==3)
-            {
-                value=a*3600;
-            }
-            if((int)unit==4)
-            {
-                value=a*60;
-            }
-            return *this;
-        }
-        else
-        {
-            if((int)unit==6)
-                a=a/1000000;
-            if((int)unit==7)
-                a=a/1000;
-            if((int)rhs.unit==6)
-                b=b/1000000;
-            if((int)rhs.unit==7)
-                b=b/1000;
-            a+=b;
-            value=a;
-            if((int)unit==6)
-            {
-                value=a*1000000;
-            }
-            if((int)unit==7)
-            {
-                value=a*1000;
-            }
-            return *this;
-        }
-    }
-
-    throw std::invalid_argument( "not the same dimention!" );
+    if(family==0) throw std::invalid_argument( "not the same dimention!" );
+       convert(a,b,family,rhs);
+            a=a+b;
+      return  help(a,family);
+   
 }
 PhysicalNumber& PhysicalNumber::operator-=(const PhysicalNumber& rhs)
 
 {
-
-    int family=samefamily(rhs);
-
+ int family=samefamily(rhs);
     double a=value;
-
     double b=rhs.value;
-
-    if(family!=0){
-
-        if(family==1){
-
-            if((int)unit==0)a=a/100000;
-
-            if((int)unit==1)a=a/1000;
-
-            if((int)rhs.unit==0)b=b/100000;
-
-            if((int)rhs.unit==1)b=b/1000;
-
-            a-=b;
-
-            value=a;
-
-            if((int)unit==0)
-
-            {
-
-                value=a*100000;
-
-            }
-
-            if((int)unit==1)
-
-            {
-
-                value=a*1000;
-
-            }
-
-            return *this;
-
-        }
-
-        else if(family==2){
-
-            if((int)unit==3)a=a/3600;
-
-            if((int)unit==4)a=a/60;
-
-            if((int)rhs.unit==3)b=b/3600;
-
-            if((int)rhs.unit==4)b=b/60;
-
-            a-=b;
-
-            value=a;
-
-            if((int)unit==3)
-
-            {
-
-                value=a*3600;
-
-            }
-
-            if((int)unit==4)
-
-            {
-
-                value=a*60;
-
-            }
-
-            return *this;
-
-        }
-
-        else {
-
-            if((int)unit==6)a=a/1000000;
-
-            if((int)unit==7)a=a/1000;
-
-            if((int)rhs.unit==6)b=b/1000000;
-
-            if((int)rhs.unit==7)b=b/1000;
-
-            a-=b;
-
-            value=a;
-
-            if((int)unit==6)
-
-            {
-
-                value=a*1000000;
-
-            }
-
-            if((int)unit==7)
-
-            {
-
-                value=a*1000;
-
-            }
-
-            return *this;
-
-        }
-
-    }
-
-    throw std::invalid_argument( "not the same dimention!" );
-
+    if(family==0) throw std::invalid_argument( "not the same dimention!" );
+       convert(a,b,family,rhs);
+            a=a-b;
+      return  help(a,family);
 }
+PhysicalNumber& PhysicalNumber::help(double a,int family)
+{
+   if(family==1){
+    if((int)unit==0)
+            value=a*100000;
+        else if((int)unit==1)
+              value=a*1000;
+         else
+             value=a;
+         }
+         else if(family==2){
+          if((int)unit==3)
+             value=a*3600;
+         else if((int)unit==4)
+             value=a*60;
+          else
+          value=a;
+         }
+          else {
+             if((int)unit==6)
+             value=a*1000000;
+         else if((int)unit==7)
+             value=a*1000;
+          else
+          value=a;
+}
+     return *this;
+}
+
 
 
 
